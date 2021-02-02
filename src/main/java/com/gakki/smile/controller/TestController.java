@@ -1,6 +1,7 @@
 package com.gakki.smile.controller;
 
 import com.gakki.smile.core.annotation.VertxController;
+import com.gakki.smile.core.annotation.web.DeleteRouting;
 import com.gakki.smile.core.annotation.web.GetRouting;
 import com.gakki.smile.entity.Book;
 import com.gakki.smile.service.UserService;
@@ -24,5 +25,11 @@ public class TestController {
         return book;
     }
 
-
+//    @DeleteRouting(value = "/deleteUser")
+//    public Book deleteUser(RoutingContext routingContext) {
+//        System.out.println("bbb");
+//        System.out.println(Thread.currentThread().getName());
+//        Book book=userService.findBookById();
+//        return book;
+//    }
 }
