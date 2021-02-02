@@ -18,7 +18,7 @@ public class TestController {
 
     @GetRouting(value = "/user")
     public Book user(RoutingContext routingContext) {
-        System.out.println("aaaa");
+        System.out.println("bbb");
         System.out.println(Thread.currentThread().getName());
         Book book=userService.findBookById();
         return book;
